@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="display.css">
+    <title>Despensas</title>
+</head>
+<body>
+    <main id="main-container">
+        <section id="section-container">
+            <section id="info-insert">
+                <div id="despesa-info">
+                    <h2>Controle de despesas</h2>
+                    <input type="text" id="nome-despesa" placeholder="Digite o nome da despesa">
+                    <input type="text" id="valor-despesa" placeholder="Valor da despesa">
+                </div>
+                <div id="container-button">
+                    <button id="button-inserir-despesas">Inserir</button>
+                    <p id="message-info">dsadsa</p>
+                </div>
+            </section>
+    
+            <section id="despesas">
+                <div id="situacao-despesas">
+                    <h2>R$<span id="valor-atualizado">
+                        0.00
+                    </span></h2>
+                </div>
+
+                <div id="container-lista-despesas">
+                    <ul id="lista-despesas">
+                    </ul>
+                </div>
+
+            </section>
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

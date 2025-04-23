@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('fonts/Kanit/Kanit-Light.ttf');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Kanit';
+}
+
+#main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-container {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+}
+
+#info-insert,
+#despesas {
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    height: 60vh;
+    box-shadow: 1px 1px 5px #01010150;
+}
+
+#info-insert {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#despesa-info, #container-button {
+    width: 100%;
+    flex: 1;
+}
+
+#despesa-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#despesa-info h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+input[type="text"] {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #01010130;
+    font-family: 'Kanit';
+    font-size: .8rem;
+}
+
+input[type="text"]::placeholder {
+    font-family: 'Kanit';
+    font-size: .7rem;
+}
+
+input[type="text"]:hover {
+    border: 1px solid #01010170;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button-inserir-despesas {
+    padding: 1rem 3rem;
+    background-color: #010101;
+    color: #f1f1f1;
+    font-family: 'Kanit';
+    border: none;
+    transition: .5s;
+}
+
+#button-inserir-despesas:hover {
+    background-color: #090909f0;
+}
+
+#message-info {
+    height: +10px;
+    margin-top: 5px;
+    font-size: .7rem;
+    display: none;
+}
+
+#despesas {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#situacao-despesas, #container-lista-despesas {
+    width: 100%;
+}
+
+#situacao-despesas {
+    flex: 1;
+    border-bottom: 1px solid #01010130;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#valor-atualizado {
+    color: #f83939;
+    font-size: 1.5rem;
+}
+
+#container-lista-despesas {
+    flex: 2;
+    overflow: auto;
+}
+
+#lista-despesas {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.list-style {
+    margin-top: 10px;
+    border: 1px solid #01010130;
+    padding: .8rem;
+    border-left: 4px solid red;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor {
+    color: red;
+    font-weight: bold;
+}
